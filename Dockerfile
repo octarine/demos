@@ -1,3 +1,3 @@
 FROM centos:latest
-    RUN yum -y epel-release 
-    RUN yum -y ansible
+    RUN yum -y install epel-release
+    RUN yum -y install ansible
