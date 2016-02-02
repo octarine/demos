@@ -5,6 +5,6 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build octarine/centos .
+    - docker build -t octarine/centos .
 test:
   override:
