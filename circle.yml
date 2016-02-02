@@ -8,3 +8,5 @@ dependencies:
     - docker build -t octarine/centos .
 test:
   override:
+    - docker run -d octarine/centos; sleep 10
+    - rpm -Vv epel-release
